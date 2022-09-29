@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Menu Page</title>
+   </head>
+   <body style="text-align:center;">
+      <div style="text-align:left;">
+         <button onclick="Back()">Back</button>
+         <script>
+            function Back() {
+              window.history.back();
+            }
+         </script>
+      </div>
+      <img  src="Menu1.jpg">
+      <br>
+      <img src="Menu2.jpg">
+   </body>
+</html>

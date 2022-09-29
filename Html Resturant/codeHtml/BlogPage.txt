@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Blog Page</title>
+      <style>
+         #Blog{
+         text-align: center;
+         color:black;
+         font-size: 2em;
+         }
+         .Techniques{
+         text-align: justify;
+         display: flex;
+         font-size: 1.5em;
+         }
+      </style>
+   </head>
+   <body>
+      <button onclick="Back()">Back</button>
+      <script>
+         function Back() {
+           window.history.back();
+         }
+      </script>
+      <p id="Blog" ><b>Blog of our Restaurant</b></p>
+      <h1 style="color:lightblue;">Important Recipes and Techniques</h1>
+      <p style="font-size:20px;"><b>1.</b> Classic French Coq au Vin</p>
+      <div class="Techniques">
+         <img src="ClassicFrench.jpg" width="300" height="300">
+         <p>
+            Coq au vin translates to rooster in wine,
+            despite most thinking it's a chicken dish
+            This hearty meal is full of aromatics,
+            wine,and vegetables creating a kitchen
+            aroma that transports you instantly to
+            the countryside of France. It's a simple
+            one-pot meal that requires mostly hands-off
+            cooking.
+         </p>
+      </div>
+      <br>
+      <p style="font-size:20px;"><b>2.</b>Grilled Filet Mignon with Bearnaise Sauce</p>
+      <div class="Techniques">
+         <img src="GrilledFiletMignon.jpg" width="300" height="300">
+         <p>
+            There are a few French sauces that you can master
+            to take all of your dishes to the next culinary level.
+            Learn how to make this insanely delicious classic French
+            Bernaise sauce for topping tender filet mignons and dipping
+            steamed asparagus spears. You will have a go-to magic trick
+            for every special dinner in your future.
+         </p>
+      </div>
+      <br>
+      <p style="font-size:20px;"><b>3.</b>Dark Chocolate Molten Lava Cake</p>
+      <div class="Techniques">
+         <img src="DarkChoclate.jpg" width="300" height="300">
+         <p>
+            Intensely chocolatey, chocolate molten lava cake is
+            the ultimate special occasion dessert for chocolate lovers
+            The crowning moment of this dessert is running your spoon through
+            the fluffy cake to reveal a river of warm fudge. You won't believe how
+            easy it is to pull of the classic recipe at home in no time.
+         </p>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title> Booking Page</title>
+      <style>
+         .Booking{
+         margin-left: auto;
+         margin-right: auto;
+         border-spacing:20px;
+         }
+         input,select{
+         width: 200px;
+         height: 30px;
+         }
+         #Form{
+         text-align: center;
+         }
+      </style>
+   </head>
+   <body>
+      <button onclick="Back()">Back</button>
+      <script>
+         function Back() {
+           window.history.back();
+         }
+      </script>
+      <p style="text-align:center;font-size:2em;" >
+         Online Booking<br>please fill in the form correctly to book  a visit in restaurant.
+      </p>
+      <hr>
+      <br><br>
+      <table class="Booking">
+         <tr>
+            <td><b>UserName</b></td>
+            <td> <input type="text"></td>
+         </tr>
+         <tr>
+            <td><b>PersonsNumber</b></td>
+            <td><input type="number"></td>
+         </tr>
+         <tr>
+            <td><b>Time</b></td>
+            <td><input  type="time"></td>
+         </tr>
+         <tr>
+            <td><b>Date</b></td>
+            <td><input type="date"></td>
+         </tr>
+         <tr>
+            <td><b>Payment way</b></td>
+            <td>
+               <select>
+                  <option>Cash</option>
+                  <option>Debit cards</option>
+                  <option>Credit cards</option>
+                  <option>Mobile payments</option>
+               </select>
+            </td>
+         </tr>
+      </table>
+      <form id="Form">
+         <input  type="submit" value="Submit" />
+      </form>
+   </body>
+</html>
