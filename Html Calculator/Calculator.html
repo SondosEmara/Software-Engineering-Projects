@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>CalculatorPage</title>
+      <style>
+         div{
+         text-align: center;
+         vertical-align: middle;
+         }
+         .Buttons{
+         margin-right: 14px;
+         margin-left: 5.5px;
+         width:40px;
+         height:50px;
+         }
+         .action{
+         margin-left: -9px;
+         width:230px;
+         height:56px;
+         }
+      </style>
+      <script>
+         function screenOutput(output){
+            var Screen=document.getElementById("Screen");
+            Screen.value+=output;
+         }
+
+         function finalResult(){
+           var Screen=document.getElementById("Screen");
+           var result=eval(Screen.value);
+           Screen.value=result;
+         }
+
+         function clearAll(){
+           document.getElementById("Screen").value=null;
+         }
+
+      </script>
+   </head>
+   <body>
+      <div>
+         <p style="font-size: 30px;"> Welcome <br>Online Calculator</p>
+      </div>
+      <div>
+         <table >
+            <tr  >
+               <form>
+                  <input id="Screen" class="action" type="text">
+               </form>
+               <br><br>
+            </tr>
+            <tr>
+               <form >
+                  <input onclick="screenOutput(1)"   class="Buttons" type="button" value="1">
+                  <input onclick="screenOutput(2)"   class="Buttons" type="button" value="2">
+                  <input onclick="screenOutput(3)"   class="Buttons" type="button" value="3">
+                  <input onclick="screenOutput('+')" class="Buttons" type="button" value="+">
+                  <br><br>
+               </form>
+            </tr>
+            <tr>
+               <form >
+                  <input onclick="screenOutput(4)"   class="Buttons" type="button" value="4">
+                  <input onclick="screenOutput(5)"   class="Buttons" type="button" value="5">
+                  <input onclick="screenOutput(6)"   class="Buttons" type="button" value="6">
+                  <input onclick="screenOutput('-')" class="Buttons" type="button" value="-">
+                  <br><br>
+               </form>
+            </tr>
+            <tr>
+               <form >
+                  <input onclick="screenOutput(7)"   class="Buttons" type="button" value="7">
+                  <input onclick="screenOutput(8)"   class="Buttons" type="button" value="8">
+                  <input onclick="screenOutput(9)"   class="Buttons" type="button" value="9">
+                  <input onclick="screenOutput('*')" class="Buttons" type="button" value="*">
+                  <br><br>
+               </form>
+            </tr>
+            <tr>
+               <form >
+                  <input onclick="screenOutput('/')" class="Buttons" type="button" value="/">
+                  <input onclick="screenOutput(0)"   class="Buttons" type="button" value="0">
+                  <input onclick="screenOutput('.')" class="Buttons" type="button" value=".">
+                  <input onclick="finalResult()"     class="Buttons" type="button" value="=">
+                  <br><br>
+               </form>
+            </tr>
+            <tr>
+               <form>
+                  <input onclick="clearAll()"  class="action" type="button" value="Clear All">
+               </form>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>
